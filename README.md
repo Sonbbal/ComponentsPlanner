@@ -1,46 +1,72 @@
-# Getting Started with Create React App
+# Component Planner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+컴포넌트 계획을 수립할 수 있는 리액트 앱
 
-## Available Scripts
+## 목차
 
-In the project directory, you can run:
+1. 개요
+2. 기능 설명
+3. 개발 계획
 
-### `yarn start`
+### 개요
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+GUI를 이용해서 컴포넌트를 계획할 수 있는 웹 어플리케이션입니다.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 기능 설명
 
-### `yarn test`
+목표로 하는 기능들에 대한 설명
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 컴포넌트를 Box 단위로 볼 수 있게 한다
+- GUI를 이용해서 자식컴포넌트와 형제 컴포넌트를 추가 할 수 있다.
+- SideBar에 각 컴포넌트에 대한 정의를 할 수 있다.
+- 큰틀의 레이아웃을 결정 할 수 있다.
 
-### `yarn build`
+### 개발 계획
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. 스펙 정의
+   - React (Create React App 적용)
+   - TypeScript
+   - sass(scss)
+   - Styled-Components
+   - Redux
+2. 컴포넌트 계획
+   - 헤더(viewport 설정)
+     - 버튼박스
+       - 모바일 버튼
+       - 테블릿 버튼
+       - PC 버튼
+   - 메인(GUI 컴포넌트)
+     - Root 컴포넌트 (최 상위 부모)
+       - 뷰포트 기준점
+     - 자식 컴포넌트
+   - 사이드바(각 컴포넌트에대한 정의)
+     - 스타일 정의
+     - 기능 정의
+     - 버튼
+       - 저장 버튼(Json파일 생성)
+       - 불러오기 버튼(Json파일 불러오기)
+3. 타입 정의
+   - Root 컴포넌트 타입
+   - 자식 컴포넌트 타입
+     - 컴포넌트 이름
+     - 부모 컴포넌트 ID
+     - 자식 컴포넌트 ID Array
+     - 스타일
+       - 레이아웃
+         - 1단
+         - N단
+         - 헤더
+         - 사이드바
+         - 푸터
+     - 기능
+       - 1key 1 data
+       - 1keyy Array Data
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### 스펙 정의 이유
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- 기본적으로 이 프로젝트의 목적은 React와 typescript 연습입니다.
+- 차후 사용할지 안 할지는 모르겠지만 제가 필요하다고 생각하는 어플리케이션이라고 생각합니다.
+- 전체적인 레이아웃과 스타일은 scss 와 mouduel csss를 이용하여 작업합니다.
+- 동적으로 변해야 하는 컴포넌트는 styled-components를 이용할 예정입니다.
+- 컴포넌트 Data는 State로 관리합니다.
+- Global State로 작성을 해야 GUI 부분에서 활용이 용이 할 것으로 예상 되어 Redux를 이용하여 개발 계획을 정했습니다.
