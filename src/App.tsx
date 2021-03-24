@@ -1,6 +1,15 @@
 import React from "react";
-function App() {
-  return <div className="App"> 컴포넌트 플래너</div>;
-}
+import Main from "./Components/Main";
+import Sidebar from "./Components/Sidebar";
+import styles from "./styles/App.module.scss";
 
-export default App;
+export default class App extends React.Component {
+  render() {
+    return (
+      <div className={styles.container}>
+        <Main />
+        <Sidebar />
+      </div>
+    );
+  }
+}
