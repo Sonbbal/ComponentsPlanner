@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/Main.module.scss";
 import BaseComponent from "./BaseComponent";
-import { BoxData } from "./types";
+import { BoxData } from "../types";
 
 export default class Main extends React.Component {
   private readonly dafalutData: BoxData = {

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { BoxData } from "./types";
+import { BoxData } from "../types";
 
 export default class BaseComponent extends React.Component<BoxData> {
   constructor(props: BoxData) {
